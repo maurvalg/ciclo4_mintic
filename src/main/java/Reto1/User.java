@@ -13,10 +13,10 @@ import javax.persistence.Id;
 import javax.persistence.Index;
 import javax.persistence.Table;
 
-import lombok.AllArgsConstructor;
-import lombok.Builder;
+//import lombok.AllArgsConstructor;
+//import lombok.Builder;
 import lombok.Data;
-import lombok.NoArgsConstructor;
+//import lombok.NoArgsConstructor;
 import lombok.NonNull;
 //import lombok.RequiredArgsConstructor;
 
@@ -28,10 +28,10 @@ import lombok.NonNull;
  */
 @Entity
 @Data
-@Builder
+//@Builder
 //@RequiredArgsConstructor
-@AllArgsConstructor
-@NoArgsConstructor
+//@AllArgsConstructor
+//@NoArgsConstructor
 @Table(name = "user", indexes = @Index(name = "indx_email", columnList = "user_email", unique = true))
 public class User implements Serializable {
     @Id
